@@ -5,15 +5,11 @@
 ### 1.1获取bilibili视频热度前50的页的数据
 
 - https://api.bilibili.com/x/v2/reply?pn=+str(num)+&type=1&oid=cid&sort=2
-
 ### 1.2获取bilibili视频播放后一个星期的弹幕
 
 - 获取接口数据步骤
-  - [https://api.bilibili.com/x/player/pagelist?](https://api.bilibili.com/x/player/pagelist?bvid=‘+str)[
-    
-    ](https://api.bilibili.com/x/player/pagelist?bvid=‘+str)[bvid=](https://api.bilibili.com/x/player/pagelist?bvid=‘+str)[‘+str](https://api.bilibili.com/x/player/pagelist?bvid=‘+str)(bvid)’+&jsonp=jsonp
-  - https://api.bilibili.com/x/v1/dm/list.so?oid=
-    +str(cid)
+  - https://api.bilibili.com/x/player/pagelist?bvid=‘+str(bvid)’+&jsonp=jsonp
+  - https://api.bilibili.com/x/v1/dm/list.so?oid=+str(cid)
 
 - 基于时间来查找弹幕数据需要处理seg.so格式的弹幕数据
 
